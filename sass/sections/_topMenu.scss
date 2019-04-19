@@ -1,0 +1,72 @@
+/*====== TOP MEU STYLES ====== */
+
+.top-menu {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid $grey_1;
+  font-family: $paragraph-font;
+  text-align: right;
+  position: fixed;
+
+  .menu-btn {
+    display: inline-block;
+    height: 60px;
+    background-color: #ffffff;
+    color: $grey_button_hover;
+    border: none;
+    border-left: 1px solid $grey_1;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      margin: 0 10px;
+      position: relative;
+      opacity: 0.5;
+    }
+
+    .cash {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .icon-small {
+      margin: 0 12px;
+      width: 10px;
+      height: 10px;
+    }
+
+    .notification-dot {
+      content: "";
+      width: 9px;
+      height: 9px;
+      background-color: $button;
+      position: absolute;
+      top: 17px;
+      right: 10px;
+      border-radius: 50%;
+    }
+
+    .user-name {
+      padding-right: 10px;
+      color: $links;
+      text-decoration: none;
+    }
+
+    &:hover {
+      background-color: $grey_1;
+      color: $menu_border;
+      transition: all 0.4s ease-out;
+      img {
+        opacity: 1.0;
+        transition: all 0.4s ease-out;
+      }
+      a {
+        color: $menu_border;
+        transition: all 0.4s ease-out;
+      }
+    }
+  }
+}
