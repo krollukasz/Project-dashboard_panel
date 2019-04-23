@@ -71,3 +71,11 @@
     }
   }
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 767px) {
+  .top-menu {
+    display: none;
+  }
+}
