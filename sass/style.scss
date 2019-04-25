@@ -1,11 +1,12 @@
 @import "variables";
-// @import "mixins";
+@import "mixins";
 @import "normalize";
 @import "layout";
 
 /* Components */
 
 /* Sections */
+@import "sections/content";
 @import "sections/topMenu";
 @import "sections/sidebarMenu";
 
