@@ -6,7 +6,9 @@
   border-bottom: 1px solid $grey_1;
   font-family: $paragraph-font;
   text-align: right;
+  z-index: 5;
   position: fixed;
+  top: 0;
 
   .menu-btn {
     margin-right: -4px;
