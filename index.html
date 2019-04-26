@@ -12,26 +12,24 @@
   <body>
 
     <!-- TOP MENU -->
-    <section>
-      <header class="menu top-menu">
-        <button class="menu-btn dropdown-wallet">
-          <img class="icon" src="images/icons/wallet.svg" alt="">
-          <span class="cash">$ 1,500.00</span>
-          <img class="icon-small" src="images/icons/arrow-down-small.svg" alt="">          
-        </button>
-        <button class="menu-btn notofication">
-          <img class="icon" src="images/icons/notification.svg" alt="">
-          <span class="notification-dot"></span>
-        </button>
-        <button class="menu-btn user-profile">
-          <img class="icon" src="images/icons/profile.svg" alt="">
-          <a href="#" id="link-login" class="user-name">Leonardo Di Caprio</a>
-        </button>
-        <button class="menu-btn logout">
-          <img class="icon" src="images/icons/quit.svg" alt="">
-        </button>
-      </header>
-    </section>
+    <header class="menu top-menu">
+      <button class="menu-btn dropdown-wallet">
+        <img class="icon" src="images/icons/wallet.svg" alt="">
+        <span class="cash">$ 1,500.00</span>
+        <img class="icon-small" src="images/icons/arrow-down-small.svg" alt="">          
+      </button>
+      <button class="menu-btn notofication">
+        <img class="icon" src="images/icons/notification.svg" alt="">
+        <span class="notification-dot"></span>
+      </button>
+      <button class="menu-btn user-profile">
+        <img class="icon" src="images/icons/profile.svg" alt="">
+        <a href="#" id="link-login" class="user-name">Leonardo Di Caprio</a>
+      </button>
+      <button class="menu-btn logout">
+        <img class="icon" src="images/icons/quit.svg" alt="">
+      </button>
+    </header>
   
     <!-- SIDEBAR MENU -->
     <aside id="sidebar-hidden" class="sidebar">
@@ -133,7 +131,57 @@
         </div>
       </div>
     </aside>
-    
+
+    <!-- GENERAL STATISTICS -->
+    <section id="main-content" class="main-content container-fluid">
+      <div class="section-general">
+        <div class="section-header">
+          <h4 class="section-title">General statistic</h4>
+        </div>
+
+        <div class="general-statistic-date">
+          <div class="date-select">
+            <input type="date" name="date-from" class="date-select-start" value="2016-05-16">
+            <input type="date" name="date-to" class="date-select-end" value="2016-05-16">
+            <i class="icon-calendar icon"></i>
+          </div>
+          <button type="submit" class="button-refresh calendar-buton">
+            <i class="icon-refresh icon"></i>
+          </button>
+        </div>
+
+        <div class="stat-numbers content-wrapper">
+          <div class="stat-numbers-container row">
+            <div class="stat-numbers-wrapper row col-sm-12 col-md-6">
+              <h4 class="stat-title col-sm-9 col-md-9">Visit Signups</h4>
+              <p class="stat-value col-sm-3 col-md-3">124</p>
+            </div>
+            <div class="stat-numbers-wrapper row col-sm-12 col-md-6">
+              <h4 class="stat-title col-sm-9 col-md-9">Net deposit</h4>
+              <p class="stat-value col-sm-3 col-md-3">564</p>
+            </div>
+            <div class="stat-numbers-wrapper row col-sm-12 col-md-6">
+              <h4 class="stat-title col-sm-9 col-md-9">FTD</h4>
+              <p class="stat-value col-sm-3 col-md-3">445</p>
+            </div>
+            <div class="stat-numbers-wrapper row col-sm-12 col-md-6">
+              <h4 class="stat-title col-sm-9 col-md-9">Turn over</h4>
+              <p class="stat-value col-sm-3 col-md-3">432</p>
+            </div>
+                  
+            <div class="statistic-earnings-chart container-fluid">
+              <div class="earning-chart row">
+                <h4 class="earning-chart-header col-md-12">Earning chart</h4>
+              </div>
+              <div class="earning-chart-wrapper row">
+                <canvas id="myChart" class="chart-graph col-sm-12"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="js/script.js"></script>
   </body>
