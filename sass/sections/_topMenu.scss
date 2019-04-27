@@ -1,23 +1,33 @@
 /*====== TOP MEU STYLES ====== */
 
-.top-menu {
+.menu-list {
+  padding-right: 0;
   width: 100%;
   background-color: #ffffff;
   border-bottom: 1px solid $grey_1;
   font-family: $paragraph-font;
+  display: flex;
+  justify-content: flex-end;
   text-align: right;
   z-index: 5;
   position: fixed;
   top: 0;
 
+  li {
+    list-style-type: none;
+  }
+
   .menu-btn {
-    margin-right: -4px;
-    display: inline-block;
+    margin: 0;
+    padding: 0 8px;
+    display: inline-flex;
+    align-items: center;
     height: 60px;
     background-color: #ffffff;
     color: $grey_button_hover;
     border: none;
     border-left: 1px solid $grey_1;
+    list-style-type: none;
     outline: none;
     position: relative;
     cursor: pointer;
@@ -48,7 +58,7 @@
       background-color: $button;
       position: absolute;
       top: 17px;
-      right: 10px;
+      right: 18px;
       border-radius: 50%;
     }
 
