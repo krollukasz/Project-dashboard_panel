@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard administration panel</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+  </head>
+
+  <body>
+
+    <!-- TOP MENU -->
+    <header class="menu top-menu">
+      <ul class="menu-list container-fluid">
+        <li class="top-btn top-bar-wallet">
+          <button class="menu-btn dropdown-wallet">
+            <img class="icon" src="images/icons/wallet.svg" alt="">
+            <span class="cash">$ 1,500.00</span>
+            <img class="icon-small" src="images/icons/arrow-down-small.svg" alt="">          
+          </button>
+        </li>
+        <li class="top-btn top-bar-notification">
+          <button class="menu-btn notofication">
+            <img class="icon" src="images/icons/notification.svg" alt="">
+            <span class="notification-dot"></span>
+          </button>
+        </li>
+        <li class="top-btn top-bar-user-profile menu-btn user-profile">
+          <img class="icon" src="images/icons/profile.svg" alt="">
+          <a href="#" id="link-login" class="user-name">Leonardo Di Caprio</a>
+        </li>
+        <li class="top-btn top-bar-logout">
+          <button class="menu-btn logout">
+            <img class="icon" src="images/icons/quit.svg" alt="">
+          </button>
+        </li>
+      </ul>
+    </header>
+  
+    <!-- SIDEBAR MENU -->
+    <aside id="sidebar-hidden" class="sidebar">
+      <div class="sidebar-menu">
+        <img class="logo_img" src="images/logo.png" alt="logo">
+        <a href="#">
+          <div class="hamburger-menu">
+            <i id="toggle-menu" class="fas fa-bars"></i>
+          </div>
+        </a>
+      </div>
+
+      <div class="sidebar-nav">
+        <ul class="sidebar-nav-main">
+          <li class="sidebar-menu-item">
+            <a href="index.html" class="menu-item active">
+              <span class="icon-general"></span>
+              General
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#" class="menu-item">
+              <span class="icon-details"></span>
+              Details
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="links.html" class="menu-item">
+              <span class="icon-links"></span>
+              Links
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="banners.html" class="menu-item">
+              <span class="icon-banners"></span>
+              Banners
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="personal-data.html" class="menu-item">
+              <span class="icon-personaldata"></span>
+              Personal data
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#" class="menu-item">
+              <span class="icon-payout"></span>
+              Payout
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#" class="menu-item">
+              <span class="icon-postback"></span>
+              Postback
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-manager">
+        <div class="manager-header">Your Manager</div>
+        <div class="manager-status">
+          <img src="images/manager.jpg" class="manager-avatar" alt="avatar">
+          <a href="#">Michał D.</a>
+          <div class="manager-available"></div>
+        </div>
+      </div>
+
+      <div class="sidebar-topbar-mobile-hiden hiden">
+        <div id="sidebar-top" class="sidebar-top">
+          <ul id="sidebar-top-hidden" class="sidebar-top-list-hiden">
+            <li class="sidebar-top-item">
+              <div class="wallet-second">
+                <i class="icon-wallet"></i>
+                <p class="money-second">$ 1,500.00</p>
+                <i class="icon-arrow-down-small"></i>
+              </div>
+            </li>
+            <li class="sidebar-top-item">
+              <div class="notification-second">
+                <i class="icon-notification"></i>
+                <div class="notification-dot-second"></div>
+              </div>
+            </li>
+            <li class="sidebar-top-item">
+              <div class="user-profile-second">
+                <i class="icon-profile"></i>
+                <a href="#" id="icon-login" class="user-name-second">Leonardo Di Caprio</a>
+              </div>
+            </li>
+            <li class="sidebar-top-item">
+              <div class="logout-second">
+                <a href="#" id="logout-modal-second">
+                  <i class="icon-quit"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <!-- LINKS -->
+    <section id="main-content" class="main-content container-fluid">
+      <div class="section-links">
+        <div class="links-header">
+          <h4 class="section-header">Links</h4>
+        </div>
+
+        <div class="section-button row">
+          <button id="add-link" class="new-button">+ add new</button>
+        </div>
+
+        <div class="links-table-wrapper container">
+          <div class="links-list">
+            <div class="table-links container container-fluid">
+              <div class="link-row row">
+                <div class="links-content-wrapper row col-sm-9 col-md-10">
+                  <div class="single-link-header col-md-6">Home page</div>
+                  <div class="link col-md-6">
+                    <a href="#" class="link-address">http://www.homepage.com</a>
+                  </div>
+                </div>
+                <div class="links-icon-wrapper col-sm-3 col-md-2">
+                  <i class="icon icon-links"></i>
+                  <i class="icon icon-trash"></i>
+                </div>
+              </div>
+            </div>
+            <div class="table-links container container-fluid">
+              <div class="link-row row">
+                <div class="links-content-wrapper row col-sm-9 col-md-10">
+                  <div class="single-link-header col-md-6">Currently offer</div>
+                  <div class="link col-md-6">
+                    <a href="#" class="link-address">http://www.currently.com</a>
+                  </div>
+                </div>
+                <div class="links-icon-wrapper col-sm-3 col-md-2">
+                  <i class="icon icon-links"></i>
+                  <i class="icon icon-trash"></i>
+                </div>
+              </div>
+            </div>
+            <div class="table-links container container-fluid">
+              <div class="link-row row">
+                <div class="links-content-wrapper row col-sm-9 col-md-10">
+                  <div class="single-link-header col-md-6">Blurpix</div>
+                  <div class="link col-md-6">
+                    <a href="#" class="link-address">http://www.blurpix.com</a>
+                  </div>
+                </div>
+                <div class="links-icon-wrapper col-sm-3 col-md-2">
+                  <i class="icon icon-links"></i>
+                  <i class="icon icon-trash"></i>
+                </div>
+              </div>
+            </div>
+            <div class="table-links container container-fluid">
+              <div class="link-row row">
+                <div class="links-content-wrapper row col-sm-9 col-md-10">
+                  <div class="single-link-header col-md-6">Your site</div>
+                  <div class="link col-md-6">
+                    <a href="#" class="link-address">http://www.yoursite.com</a>
+                  </div>
+                </div>
+                <div class="links-icon-wrapper col-sm-3 col-md-2">
+                  <i class="icon icon-links"></i>
+                  <i class="icon icon-trash"></i>
+                </div>
+              </div>
+            </div>
+            <div class="table-links container container-fluid">
+              <div class="link-row row">
+                <div class="links-content-wrapper row col-sm-9 col-md-10">
+                  <div class="single-link-header col-md-6">Google</div>
+                  <div class="link col-md-6">
+                    <a href="#" class="link-address">http://www.google.com</a>
+                  </div>
+                </div>
+                <div class="links-icon-wrapper col-sm-3 col-md-2">
+                  <i class="icon icon-links"></i>
+                  <i class="icon icon-trash"></i>
+                </div>
+              </div>
+            </div>
+            <div class="table-links container container-fluid">
+              <div class="link-row row">
+                <div class="links-content-wrapper row col-sm-9 col-md-10">
+                  <div class="single-link-header col-md-6">Facebook</div>
+                  <div class="link col-md-6">
+                    <a href="#" class="link-address">http://www.facebook.com</a>
+                  </div>
+                </div>
+                <div class="links-icon-wrapper col-sm-3 col-md-2">
+                  <i class="icon icon-links"></i>
+                  <i class="icon icon-trash"></i>
+                </div>
+              </div>
+            </div>
+            <div class="table-links container container-fluid">
+              <div class="link-row row">
+                <div class="links-content-wrapper row col-sm-9 col-md-10">
+                  <div class="single-link-header col-md-6">Dashboard</div>
+                  <div class="link col-md-6">
+                    <a href="#" class="link-address">http://www.dashboard.com</a>
+                  </div>
+                </div>
+                <div class="links-icon-wrapper col-sm-3 col-md-2">
+                  <i class="icon icon-links"></i>
+                  <i class="icon icon-trash"></i>
+                </div>
+              </div>
+            </div>
+            <div class="table-links container container-fluid">
+              <div class="link-row row">
+                <div class="links-content-wrapper row col-sm-9 col-md-10">
+                  <div class="single-link-header col-md-6">Blurax</div>
+                  <div class="link col-md-6">
+                    <a href="#" class="link-address">http://www.blurax.com</a>
+                  </div>
+                </div>
+                <div class="links-icon-wrapper col-sm-3 col-md-2">
+                  <i class="icon icon-links"></i>
+                  <i class="icon icon-trash"></i>
+                </div>
+              </div>
+            </div>
+            <div class="table-links container container-fluid">
+              <div class="link-row row">
+                <div class="links-content-wrapper row col-sm-9 col-md-10">
+                  <div class="single-link-header col-md-6">Piece of Wine</div>
+                  <div class="link col-md-6">
+                    <a href="#" class="link-address">http://www.pieceofwine.com</a>
+                  </div>
+                </div>
+                <div class="links-icon-wrapper col-sm-3 col-md-2">
+                  <i class="icon icon-links"></i>
+                  <i class="icon icon-trash"></i>
+                </div>
+              </div>
+            </div>
+            <div class="table-links container container-fluid">
+              <div class="link-row row">
+                <div class="links-content-wrapper row col-sm-9 col-md-10">
+                  <div class="single-link-header col-md-6">Twitter</div>
+                  <div class="link col-md-6">
+                    <a href="#" class="link-address">http://www.twitter.com</a>
+                  </div>
+                </div>
+                <div class="links-icon-wrapper col-sm-3 col-md-2">
+                  <i class="icon icon-links"></i>
+                  <i class="icon icon-trash"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-button row">
+          <button id="add-link" class="new-button">+ add new</button>
+        </div>
+      </div>
+    </section>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
