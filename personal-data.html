@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard administration panel</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+  </head>
+
+  <body>
+
+    <!-- TOP MENU -->
+    <header class="menu top-menu">
+      <ul class="menu-list container-fluid">
+        <li class="top-btn top-bar-wallet">
+          <button class="menu-btn dropdown-wallet">
+            <img class="icon" src="images/icons/wallet.svg" alt="">
+            <span class="cash">$ 1,500.00</span>
+            <img class="icon-small" src="images/icons/arrow-down-small.svg" alt="">          
+          </button>
+        </li>
+        <li class="top-btn top-bar-notification">
+          <button class="menu-btn notofication">
+            <img class="icon" src="images/icons/notification.svg" alt="">
+            <span class="notification-dot"></span>
+          </button>
+        </li>
+        <li class="top-btn top-bar-user-profile menu-btn user-profile">
+          <img class="icon" src="images/icons/profile.svg" alt="">
+          <a href="#" id="link-login" class="user-name">Leonardo Di Caprio</a>
+        </li>
+        <li class="top-btn top-bar-logout">
+          <button class="menu-btn logout">
+            <img class="icon" src="images/icons/quit.svg" alt="">
+          </button>
+        </li>
+      </ul>
+    </header>
+  
+    <!-- SIDEBAR MENU -->
+    <aside id="sidebar-hidden" class="sidebar">
+      <div class="sidebar-menu">
+        <img class="logo_img" src="images/logo.png" alt="logo">
+        <a href="#">
+          <div class="hamburger-menu">
+            <i id="toggle-menu" class="fas fa-bars"></i>
+          </div>
+        </a>
+      </div>
+
+      <div class="sidebar-nav">
+        <ul class="sidebar-nav-main">
+          <li class="sidebar-menu-item">
+            <a href="index.html" class="menu-item active">
+              <span class="icon-general"></span>
+              General
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#" class="menu-item">
+              <span class="icon-details"></span>
+              Details
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="links.html" class="menu-item">
+              <span class="icon-links"></span>
+              Links
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="banners.html" class="menu-item">
+              <span class="icon-banners"></span>
+              Banners
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="personal-data.html" class="menu-item">
+              <span class="icon-personaldata"></span>
+              Personal data
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#" class="menu-item">
+              <span class="icon-payout"></span>
+              Payout
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#" class="menu-item">
+              <span class="icon-postback"></span>
+              Postback
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-manager">
+        <div class="manager-header">Your Manager</div>
+        <div class="manager-status">
+          <img src="images/manager.jpg" class="manager-avatar" alt="avatar">
+          <a href="#">Michał D.</a>
+          <div class="manager-available"></div>
+        </div>
+      </div>
+
+      <div class="sidebar-topbar-mobile-hiden hiden">
+        <div id="sidebar-top" class="sidebar-top">
+          <ul id="sidebar-top-hidden" class="sidebar-top-list-hiden">
+            <li class="sidebar-top-item">
+              <div class="wallet-second">
+                <i class="icon-wallet"></i>
+                <p class="money-second">$ 1,500.00</p>
+                <i class="icon-arrow-down-small"></i>
+              </div>
+            </li>
+            <li class="sidebar-top-item">
+              <div class="notification-second">
+                <i class="icon-notification"></i>
+                <div class="notification-dot-second"></div>
+              </div>
+            </li>
+            <li class="sidebar-top-item">
+              <div class="user-profile-second">
+                <i class="icon-profile"></i>
+                <a href="#" id="icon-login" class="user-name-second">Leonardo Di Caprio</a>
+              </div>
+            </li>
+            <li class="sidebar-top-item">
+              <div class="logout-second">
+                <a href="#" id="logout-modal-second">
+                  <i class="icon-quit"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <!-- FORM -->
+    <section id="main-content" class="main-content container-fluid">
+      <div class="section-form">
+        <div class="form-header">
+          <h4 class="section-header">Personal data</h4>
+        </div>
+
+        <form action="" method="POST" class="form personal-data">
+          <div class="form-wrapper-with-inputs">
+            <div class="general-info-form-inputs row">
+              <label class="form-label col-sm-12 col-md-4">Name</label>
+              <input class="form-input col-sm-12 col-md-8" type="text" name="user-name" value="" placeholder="Enter name" pattern="[a-z][A-Z][ąćęłńóśźż][ĄĆĘŁŃÓŚŹŻ]" required>
+            </div>
+            <div class="general-info-form-inputs row">
+              <label class="form-label col-sm-12 col-md-4">Surname</label>
+              <input class="form-input col-sm-12 col-md-8" type="text" name="user-surname" value="" placeholder="Enter surname" pattern="[a-z][A-Z][ąćęłńóśźż][ĄĆĘŁŃÓŚŹŻ]" required>
+            </div>
+            <div class="general-info-form-inputs row">
+              <label class="form-label col-sm-12 col-md-4">E-mail</label>
+              <input class="form-input col-sm-12 col-md-8" type="email" name="user-email" value="" placeholder="Enter e-mail" required>
+            </div>
+            <div class="general-info-form-inputs row">
+              <label class="form-label col-sm-12 col-md-4">Phone number</label>
+              <input class="form-input col-sm-12 col-md-8" type="tel" name="user-phone" value="" placeholder="Phone number, ex: +48 123 456 789" pattern="[\+][0-9]{2}[ ][0-9]{3}[- ][0-9]{3}[0-9]{3}" required>
+            </div>
+          </div>
+          <div class="form-wrapper-with-inputs">
+            <div class="general-info-form-inputs row">
+              <label class="form-label col-sm-12 col-md-4">Skype</label>
+              <input class="form-input col-sm-12 col-md-8" type="text" name="skype" value="" placeholder="Enter Skype login">
+            </div>
+            <div class="general-info-form-inputs row">
+              <label class="form-label col-sm-12 col-md-4">ICQ</label>
+              <input class="form-input col-sm-12 col-md-8" type="text" name="icq" value="" placeholder="Enter ICQ login">
+            </div>
+            <div class="general-info-form-inputs row">
+              <label class="form-label col-sm-12 col-md-4">Msn</label>
+              <input class="form-input col-sm-12 col-md-8" type="email" name="msn" value="" placeholder="Enter Msn login">
+            </div>
+          </div>
+          <div class="form-wrapper-with-inputs">
+            <div class="general-info-form-inputs row">
+              <label class="form-label col-sm-12 col-md-4">Wallet</label>
+              <input class="form-input col-sm-12 col-md-8" type="text" name="wallet" value="" placeholder="Enter the cash amount">
+            </div> 
+          </div>
+          <div class="form-wrapper-with-inputs">
+            <div class="general-info-form-inputs row">
+              <label class="form-label col-sm-12 col-md-4">Password</label>
+              <input class="form-input col-sm-12 col-md-8" type="password" name="password" value="" placeholder="Enter password" required>
+            </div> 
+            <div class="general-info-form-inputs row">
+              <label class="form-label col-sm-12 col-md-4">Repeat</label>
+              <input class="form-input col-sm-12 col-md-8" type="password" name="wallet" value="" placeholder="Repeat password" required>
+            </div> 
+          </div>
+        </form>
+        
+        <div class="section-button row">
+          <button id="form-data-button" type="submit" class="btn save-button new-button">Save</button>
+        </div>
+      </div>
+    </section>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
