@@ -1,0 +1,93 @@
+/* ====== FORM STYLES ====== */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+
+  .section-form {
+    margin: 20px;
+    padding: 20px;
+    // width: calc(100% - 201px);
+    background-color: #ffffff;
+    box-shadow: 0 0 8px 2px $grey;
+
+    .form-header {
+      padding: 8px 5px;
+      color: $grey_font;
+      text-transform: uppercase;
+      border-bottom: 1px solid $grey_1;
+    }
+
+    .section-button {
+      margin: 20px 0;
+      padding: 12px 0 16px;
+      justify-content: center;
+
+      .new-button {
+        padding: 5px;
+        width: 120px;
+        height: 40px;
+        background-color: $button;
+        font-size: 1em;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        outline: none;
+
+        &:hover {
+          background-color: $button_hover;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .form-wrapper-with-inputs {
+      padding-top: 45px;
+      width: 100%;
+      padding-bottom: 45px;
+      border-bottom: 1px solid $grey_1;
+    
+
+      .general-info-form-inputs {
+        margin: 0 auto;
+        margin-top: 18px;
+        max-width: 500px;
+        justify-content: flex-end;
+        align-items: center;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        .form-label {
+          color: $grey_button;
+          font-size: 16px;
+          font-weight: 700;
+        }
+
+        .form-input {
+          padding: 12px;
+          color: $black_1;
+          font-size: 14px;
+          border: 1px solid $grey_1;
+          border-radius: 4px;
+          outline: none;
+
+          &:focus {
+            outline: 2px solid $green;
+            border-radius: 4px;
+          }
+
+          &:hover {
+            border-color: $links;
+          }
+
+          &::placeholder {
+            color: $grey;
+            font-weight: 100;
+          }
+        }
+      }
+    } 
+  }
+}
