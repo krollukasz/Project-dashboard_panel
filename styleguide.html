@@ -4,42 +4,126 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dashboard panel styleguide</title>
+    <title>Dashboard administration panel</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
   </head>
-  
+
   <body>
-    <h1>Style guide</h1>
-    <section>
-      <h3>===== Headers, paragraphs and links =====</h3>
-      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-      <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-      <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
-      <p>Lorem ipsum dolor sit amet, consectetur <strong>adipiscing elit</strong>. Maecenas blandit diam urna, eu <a href="#">dignissim</a> ex dignissim consequat. Duis porta lectus lorem, quis eleifend justo scelerisque eget. Duis ac sem et turpis tincidunt molestie in non ipsum. Maecenas ut augue erat. Phasellus eu est commodo est hendrerit tempor. Mauris dignissim ex vel magna aliquet, sit amet facilisis turpis tincidunt. Fusce quis blandit libero, sed dapibus nisl. Pellentesque vitae ligula sed tellus sagittis dapibus eu non metus. Mauris rutrum ligula ut sapien varius, pellentesque volutpat diam porta. Ut at nunc ac tortor dapibus sodales id at leo. Nunc posuere lorem non feugiat elementum. Nunc sagittis diam justo, nec malesuada sapien tristique id. Vivamus in consequat nibh. Etiam tempor id ligula a dapibus. Proin vitae arcu nulla.</p>
-      <a href="#" class="small-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a><br>
-      <a href="#" class="large-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a><br>
-    </section>
+    <h1>Page Header</h1> <br>
+    <h2>Section header</h2> <br>
+    <p>Text</p> <br>
+    <a href="#" class="link-address">link</a> <br>
 
-    <section>
-      <h3>===== Buttons =====</h3>
-      <button class="btn grey-button">Grey Button</button>
-      <button class="btn main-button">Main Button</button>
-      <button class="btn disabled-button">Disabled Button</button>
-    </section>
+    <div class="section-button row">
+      <button id="add-link" class="new-button">Button</button>
+    </div>
 
-    <section>
-      <h3>===== Lists =====</h3>
-      <ul>
-        <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-      </ul>
-      <ol>
-        <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-      </ol>
-    </section>
+    <input class="input" placeholder="placeholder"> <br>
+
+    <div class="date-select">
+      <input type="date" name="date-from" class="date-select-start" value="2016-05-16">
+      <input type="date" name="date-to" class="date-select-end" value="2016-05-16">
+      <i class="icon-calendar icon"></i>
+    </div>
+
+    <div class="stat-numbers content-wrapper">
+      <div class="stat-numbers-container row">
+        <div class="stat-numbers-wrapper row col-sm-12 col-md-6">
+          <h4 class="stat-title col-sm-9 col-md-9">Visit Signups</h4>
+          <p class="stat-value col-sm-3 col-md-3">124</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="banners-table-wrapper container">
+      <div class="banners-list">
+        <div class="table-banners container container-fluid">
+          <div class="banner-row row">
+            <div class="banners-content-wrapper row col-sm-9 col-md-10">
+              <div class="single-banner-header col-md-6">Banner main</div>
+              <div class="link col-md-6">
+                <a href="#" class="link-address">http://www.website.com/bannermain.gif</a>
+              </div>
+            </div>
+            <div class="links-icon-wrapper col-sm-3 col-md-2">
+              <i class="icon icon-links"></i>
+              <i class="icon icon-trash"></i>
+            </div>
+          </div>
+        </div>
+        <div class="table-banners container container-fluid">
+          <div class="banner-row row">
+            <div class="banners-content-wrapper row col-sm-9 col-md-10">
+              <div class="single-banner-header col-md-6">Sign up banner</div>
+              <div class="link col-md-6">
+                <a href="#" class="link-address">http://www.website.com/signup.gif</a>
+              </div>
+            </div>
+            <div class="links-icon-wrapper col-sm-3 col-md-2">
+              <i class="icon icon-links"></i>
+              <i class="icon icon-trash"></i>
+            </div>
+          </div>
+        </div>
+        <div class="table-banners container container-fluid">
+          <div class="banner-row row">
+            <div class="banners-content-wrapper row col-sm-9 col-md-10">
+              <div class="single-banner-header col-md-6">Banner left side</div>
+              <div class="link col-md-6">
+                <a href="#" class="link-address">http://www.website.com/leftside.gif</a>
+              </div>
+            </div>
+            <div class="links-icon-wrapper col-sm-3 col-md-2">
+              <i class="icon icon-links"></i>
+              <i class="icon icon-trash"></i>
+            </div>
+          </div>
+        </div>
+        <div class="table-banners container container-fluid">
+          <div class="banner-row row">
+            <div class="banners-content-wrapper row col-sm-9 col-md-10">
+              <div class="single-banner-header col-md-6">Vertical banner</div>
+              <div class="link col-md-6">
+                <a href="#" class="link-address">http://www.website.com/vert.gif</a>
+              </div>
+            </div>
+            <div class="links-icon-wrapper col-sm-3 col-md-2">
+              <i class="icon icon-links"></i>
+              <i class="icon icon-trash"></i>
+            </div>
+          </div>
+        </div>
+        <div class="table-banners container container-fluid">
+          <div class="banner-row row">
+            <div class="banners-content-wrapper row col-sm-9 col-md-10">
+              <div class="single-banner-header col-md-6">Front banner</div>
+              <div class="link col-md-6">
+                <a href="#" class="link-address">http://www.website.com/front.gif</a>
+              </div>
+            </div>
+            <div class="links-icon-wrapper col-sm-3 col-md-2">
+              <i class="icon icon-links"></i>
+              <i class="icon icon-trash"></i>
+            </div>
+          </div>
+        </div>
+        <div class="table-banners container container-fluid">
+          <div class="banner-row row">
+            <div class="banners-content-wrapper row col-sm-9 col-md-10">
+              <div class="single-banner-header col-md-6">Horizontal banner</div>
+              <div class="link col-md-6">
+                <a href="#" class="link-address">http://www.website.com/horizontal.gif</a>
+              </div>
+            </div>
+            <div class="links-icon-wrapper col-sm-3 col-md-2">
+              <i class="icon icon-links"></i>
+              <i class="icon icon-trash"></i>
+            </div>
+          </div>
+        </div>           
+      </div>
+    </div>
   </body>
+
 </html>
