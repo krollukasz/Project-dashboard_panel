@@ -1,15 +1,15 @@
-/* ====== LINKS STYLES ====== */
-
 .main-content {
   display: flex;
   flex-direction: column;
 
+  .section-banners,
   .section-links {
     margin: 20px;
     // width: calc(100% - 201px);
     background-color: #ffffff;
     box-shadow: 0 0 8px 2px $grey;
 
+    .banners-page-header,
     .links-header {
       padding-left: 18px;
       width: 100%;
@@ -45,13 +45,13 @@
       }
     }
 
-    .links-table-wrapper {
+    .table-wrapper {
       display: flex;
       justify-content: center;
 
-      .links-list {
+      .elements-list-content {
         margin: 0 auto;
-        padding: 0 15x;
+        padding: 0 15px;
         width: 100%;
         max-width: 800px;
 
@@ -59,11 +59,11 @@
           border-bottom: 1px solid $grey_1;
         }
 
-        .table-links {
+        .table-element {
           width: 100%;
           border-top: 1px solid $grey_1;
 
-          .link-row {
+          .element-row {
             padding: 15px;
             height: 55px;
             align-items: center;
@@ -73,7 +73,7 @@
             &:hover {
               background-color: #f1f3f3;
               
-              .links-icon-wrapper {
+              .element-icon-wrapper {
                 opacity: 1;
                 
                 i:hover {
@@ -86,7 +86,7 @@
               }
             }
 
-            .single-link-header {
+            .single-element-header {
               margin: 0;
               padding-left: 12px;
               font-size: $page-header-font-size;
@@ -105,7 +105,7 @@
               }
             }
 
-            .links-icon-wrapper {
+            .element-icon-wrapper {
               display: flex;
               justify-content: space-evenly;
               opacity: 0;
@@ -119,11 +119,12 @@
 
 @media(min-width: 768px) and (max-width: 991px) {
   .main-content {
+    .section-banners,
     .section-links {
-      .links-table-wrapper {
-        .links-list {
-          .table-links {
-            .link-row {
+      .table-wrapper {
+        .elements-list-content {
+          .table-element {
+            .element-row {
               padding: 15px 0;
 
               .link {
@@ -144,65 +145,21 @@
     top: 0px;
     left: 75px;
 
-    .section-general {
-      margin: 0;
-      padding: 10px;
-
-      .general-statistic-date {
-        padding: 15px 0;
-
-        .date-select {
-          padding: 6px 2px;
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-wrap: nowrap;
-
-          .date-select-start,
-          .date-select-end {
-            padding: 5px 0 5px 8px;
-            width: 44%;
-            overflow: hidden;
-            font-size: 12px;
-          }
-
-          .icon-calendar {
-            margin: 0;
-            padding: 2px;
-            font-size: 12px;
-          }
-        }
-      }
-
-      .stat-numbers {
-        padding: 16px 4px;
-
-        .stat-numbers-container .statistic-earnings-chart {
-          margin-top: 20px;
-          padding: 0;
-
-          .earning-chart-header {
-            margin: 15px 0;
-          }
-        }
-      }
-    }
-
-    .section-links {
+    .section-links,
+    .section-banners {
       margin: 15px 0;
       padding: 10px 6px;
 
-      .links-table-wrapper {
+      .table-wrapper {
         padding: 0;
 
-        .links-list {
+        .elements-list-content {
           padding: 0 4px;
 
-          .table-links {
+          .table-element {
             padding: 0 8px;
           
-            .link-row {
+            .element-row {
               padding: 0;
               font-size: 12px;
 
@@ -210,12 +167,12 @@
                 overflow: hidden;
               }
 
-              .single-link-header {
+              .single-element-header {
                 padding: 0px;
                 font-size: 13px;
               }
 
-              .links-icon-wrapper {
+              .element-icon-wrapper {
                 padding-right: 5px;
                 display: flex;
                 align-items: flex-end;

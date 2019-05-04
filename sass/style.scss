@@ -4,6 +4,7 @@
 @import "layout";
 
 /* Components */
+@import "components/table";
 
 /* Sections */
 @import "sections/content";
@@ -11,6 +12,4 @@
 @import "sections/sidebarMenu";
 
 /* Pages */
-@import "pages/banners";
 @import "pages/form";
-@import "pages/links";
