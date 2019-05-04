@@ -997,9 +997,13 @@ body {
   margin: 5px;
   padding: 5px;
   max-width: 400px;
+  height: 42px;
   border: 1px solid #bababa;
   border-radius: 4px;
-  display: inline-block;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .main-content .section-general .general-statistic-date .date-select .date-select-start, .main-content .section-general .general-statistic-date .date-select .date-select-end {
@@ -1563,8 +1567,13 @@ body {
   max-width: 800px;
 }
 
+.main-content .section-banners .banners-table-wrapper .banners-list:last-child {
+  border-bottom: 1px solid #e3e3e3;
+}
+
 .main-content .section-banners .banners-table-wrapper .banners-list .table-banners {
   width: 100%;
+  border-top: 1px solid #e3e3e3;
 }
 
 .main-content .section-banners .banners-table-wrapper .banners-list .table-banners .banner-row {
@@ -1572,13 +1581,8 @@ body {
   height: 55px;
   -ms-flex-align: center;
       align-items: center;
-  border-top: 1px solid #e3e3e3;
   border-collapse: collapse;
   transition: all .2s ease-out;
-}
-
-.main-content .section-banners .banners-table-wrapper .banners-list .table-banners .banner-row:last-child {
-  border-bottom: 1px solid #e3e3e3;
 }
 
 .main-content .section-banners .banners-table-wrapper .banners-list .table-banners .banner-row:hover {
@@ -1894,8 +1898,13 @@ body {
   max-width: 800px;
 }
 
+.main-content .section-links .links-table-wrapper .links-list:last-child {
+  border-bottom: 1px solid #e3e3e3;
+}
+
 .main-content .section-links .links-table-wrapper .links-list .table-links {
   width: 100%;
+  border-top: 1px solid #e3e3e3;
 }
 
 .main-content .section-links .links-table-wrapper .links-list .table-links .link-row {
@@ -1903,13 +1912,8 @@ body {
   height: 55px;
   -ms-flex-align: center;
       align-items: center;
-  border-top: 1px solid #e3e3e3;
   border-collapse: collapse;
   transition: all .2s ease-out;
-}
-
-.main-content .section-links .links-table-wrapper .links-list .table-links .link-row:last-child {
-  border-bottom: 1px solid #e3e3e3;
 }
 
 .main-content .section-links .links-table-wrapper .links-list .table-links .link-row:hover {

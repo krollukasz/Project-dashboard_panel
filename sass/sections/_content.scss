@@ -38,9 +38,11 @@
         margin: 5px;
         padding: 5px;
         max-width: 400px;
+        height: 42px;
         border: 1px solid $grey;
         border-radius: 4px;
-        display: inline-block;
+        display: flex;
+        align-items: center;
 
         .date-select-start, .date-select-end {
           font-size: $paragraph-font-size;
