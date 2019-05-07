@@ -945,7 +945,6 @@ body {
 .main-content .section-banners .table-wrapper .elements-list-content,
 .main-content .section-links .table-wrapper .elements-list-content {
   margin: 0 auto;
-  padding: 0 15px;
   width: 100%;
   max-width: 800px;
 }
