@@ -1205,12 +1205,16 @@ body {
 }
 
 .main-content .section-general .stat-numbers .stat-numbers-container .stat-numbers-wrapper .stat-title {
+  font-size: 16px;
+  font-weight: 700;
   color: #a6a6a6;
 }
 
 .main-content .section-general .stat-numbers .stat-numbers-container .stat-numbers-wrapper .stat-value {
+  font-size: 16px;
+  color: #333333;
   text-align: right;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 .main-content .section-general .stat-numbers .stat-numbers-container .statistic-earnings-chart {
