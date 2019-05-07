@@ -9,7 +9,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
 html {
   line-height: 1.15;
   /* 1 */
@@ -350,7 +350,7 @@ template {
 
 body {
   background-color: #fff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   position: relative;
 }
 
@@ -957,6 +957,7 @@ body {
 
 .main-content .section-banners .table-wrapper .elements-list-content .table-element,
 .main-content .section-links .table-wrapper .elements-list-content .table-element {
+  padding: 0;
   width: 100%;
   border-top: 1px solid #e3e3e3;
 }
@@ -1277,7 +1278,7 @@ body {
   width: 100%;
   background-color: #ffffff;
   border-bottom: 1px solid #e3e3e3;
-  font-family: "Open Sans";
+  font-family: "Roboto";
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: end;
